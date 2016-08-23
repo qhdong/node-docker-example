@@ -12,7 +12,7 @@ var server = http.createServer(router({
   }
 }))
 
-server.listen(8080, function() {
+server.listen(parseInt(process.env.PORT) || 80, function() {
     console.log('Docker DEMO with Node.js is running.')
 })
 
